@@ -4,6 +4,8 @@ function preload(){
 function setup() {
   createCanvas(500, 676);
   background(225, 225, 225);
+  angleMode(DEGREES)
+  rectMode(CENTER)
 
   
 
@@ -36,7 +38,7 @@ function setup() {
   push();
   strokeWeight(0)
   fill(133, 40, 35, trans);
-  rect(217, 179, 131, 135)
+  rect(250, 338, 130, 130)
   pop()
 
   //green quad
@@ -56,16 +58,15 @@ function setup() {
   //grey semi-circle TOP
   push();
   strokeWeight(0)
-  fill(110, 112, 125, trans);
-  angleMode(DEGREES)
+  blendMode(MULTIPLY)
+  fill(73, 115, 225, trans);
   arc(250, 0, 500, 500, 0, 180);
   pop()
 
   //grey semi-circle BOTTOM
   push();
   strokeWeight(0)
-  fill(110, 112, 125, trans);
-  angleMode(DEGREES)
+  fill(300, 100, 125, trans);
   arc(250, 676, 500, 500, 0, 360);
   pop()
 
@@ -92,10 +93,10 @@ function setup() {
 
   //yellow circle
   push();
-  blendMode(SCREEN)
+  blendMode(SOFT_LIGHT)
   strokeWeight(0)
   fill(300, 300, 10, trans);
-  circle(width/2, height/2, 90)
+  circle(width/2, height/2, 500)
   pop()
 
 
